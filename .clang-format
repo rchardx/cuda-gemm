@@ -1,0 +1,121 @@
+---
+Language: Cpp
+BasedOnStyle: Google
+
+# If true, analyze the formatted file for the most common alignment of & and *
+DerivePointerAlignment: false
+
+PointerAlignment: Right
+
+# Only sort headers in each include block
+SortIncludes: true
+IncludeBlocks: Preserve
+
+# Horizontally aligns arguments after an open bracket?
+AlignAfterOpenBracket: AlwaysBreak
+
+# Style of aligning consecutive bit field
+AlignConsecutiveBitFields: AcrossEmptyLinesAndComments
+
+# Style of aligning consecutive declarations
+#AlignConsecutiveDeclarations: None
+
+# Style of aligning consecutive macro definitions
+AlignConsecutiveMacros: AcrossEmptyLinesAndComments
+
+# Dependent on the value, int f() { return 0; } can be put on a single line
+AllowShortFunctionsOnASingleLine: None
+
+# Dependent on the value, if (a) return; can be put on a single line
+AllowShortIfStatementsOnASingleLine: Never
+
+# Dependent on the value, auto lambda []() { return 0; } can be put on a single line
+AllowShortLambdasOnASingleLine: None
+
+# If true, while (true) continue; can be put on a single line
+AllowShortLoopsOnASingleLine: false
+
+# Aligns trailing comments?
+AlignTrailingComments: true
+
+# Always break before multiline string literals?
+AlwaysBreakBeforeMultilineStrings: true
+
+# The template declaration breaking style to use
+AlwaysBreakTemplateDeclarations: true
+
+# Control of individual brace wrapping cases, valid when BreakBeforeBraces is Custom
+BraceWrapping:
+    AfterCaseLabel: false
+    AfterClass: false
+    AfterControlStatement: false
+    AfterEnum: false
+    AfterFunction: false
+    AfterNamespace: false
+    AfterStruct: false
+    AfterUnion: false
+    AfterExternBlock: false
+    BeforeCatch: false
+    BeforeElse: false
+    BeforeLambdaBody: false
+    BeforeWhile: false
+    IndentBraces: false
+    SplitEmptyFunction: false
+    SplitEmptyRecord: false
+    SplitEmptyNamespace: false
+
+# The brace breaking style to use. Candidates: Custom, Allman, Attach
+BreakBeforeBraces: Custom
+
+BreakBeforeBinaryOperators: NonAssignment
+
+# Ternary operators will be placed after line breaks?
+BreakBeforeTernaryOperators: false
+
+# The constructor initializers style to use
+BreakConstructorInitializers: BeforeComma
+
+# The column limit. A column limit of 0 means that there is no column limit
+ColumnLimit: 120
+
+# Consecutive namespace declarations will be on the same line?
+CompactNamespaces: false
+
+# Analyze the formatted file for the most used line ending
+DeriveLineEnding: true
+
+# Adds missing namespace end comments and fixes invalid existing ones?
+FixNamespaceComments: true
+
+# Indent case label blocks one level from the case label
+IndentCaseBlocks: true
+
+# Indent case labels one level from the switch statement
+IndentCaseLabels: false
+
+# IndentExternBlockStyle is the type of indenting of extern blocks
+IndentExternBlock: NoIndent
+
+# The preprocessor directive indenting style to use
+IndentPPDirectives: None
+
+# The number of columns to use for indentation
+IndentWidth: 4
+
+# Indent if a function definition or declaration is wrapped after the type
+IndentWrappedFunctionNames: false
+
+# The maximum number of consecutive empty lines to keep
+MaxEmptyLinesToKeep: 1
+
+# Attempt to re-flow comments?
+ReflowComments: false
+
+# A space will be inserted after the ‘template’ keyword?
+SpaceAfterTemplateKeyword: true
+
+Standard: Auto
+
+# The way to use tab characters in the resulting file
+UseTab: Never
+---
